@@ -1,0 +1,108 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.ml_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\android\app\src\main\AndroidManifest.xml:4:5-66
+14-->C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\android\app\src\main\AndroidManifest.xml:4:22-64
+15    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+15-->C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\android\app\src\main\AndroidManifest.xml:3:5-70
+15-->C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\android\app\src\main\AndroidManifest.xml:3:22-68
+16    <uses-permission android:name="android.permission.BLUETOOTH" />
+16-->C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\android\app\src\main\AndroidManifest.xml:5:5-67
+16-->C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\android\app\src\main\AndroidManifest.xml:5:22-65
+17    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+17-->C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\android\app\src\main\AndroidManifest.xml:6:5-73
+17-->C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\android\app\src\main\AndroidManifest.xml:6:22-71
+18    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+18-->C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\android\app\src\main\AndroidManifest.xml:7:5-75
+18-->C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\android\app\src\main\AndroidManifest.xml:7:22-73
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+19-->[:image_picker] C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
+19-->[:image_picker] C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-77
+20    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+20-->[:image_picker] C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-81
+20-->[:image_picker] C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-78
+21
+22    <application
+23        android:name="android.app.Application"
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.6.0] C:\Users\imad.dweikat\.gradle\caches\transforms-2\files-2.1\122df2e57d294d1a53db26bbc3b813c1\core-1.6.0\AndroidManifest.xml:24:18-86
+25        android:debuggable="true"
+26        android:icon="@mipmap/ic_launcher"
+27        android:label="ml_app" >
+28        <activity
+29            android:name="com.example.ml_app.MainActivity"
+30            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+31            android:exported="true"
+32            android:hardwareAccelerated="true"
+33            android:launchMode="singleTop"
+34            android:theme="@style/LaunchTheme"
+35            android:windowSoftInputMode="adjustResize" >
+36
+37            <!--
+38                 Specifies an Android theme to apply to this Activity as soon as
+39                 the Android process has started. This theme is visible to the user
+40                 while the Flutter UI initializes. After that, this theme continues
+41                 to determine the Window background behind the Flutter UI.
+42            -->
+43            <meta-data
+44                android:name="io.flutter.embedding.android.NormalTheme"
+45                android:resource="@style/NormalTheme" />
+46
+47            <intent-filter>
+48                <action android:name="android.intent.action.MAIN" />
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+51            </intent-filter>
+52        </activity>
+53        <!--
+54             Don't delete the meta-data below.
+55             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+56        -->
+57        <meta-data
+58            android:name="flutterEmbedding"
+59            android:value="2" />
+60
+61        <provider
+61-->[:image_picker] C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-19:20
+62            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+62-->[:image_picker] C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-82
+63            android:authorities="com.example.ml_app.flutter.image_provider"
+63-->[:image_picker] C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-74
+64            android:exported="false"
+64-->[:image_picker] C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+65            android:grantUriPermissions="true" >
+65-->[:image_picker] C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-47
+66            <meta-data
+66-->[:image_picker] C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-18:75
+67                android:name="android.support.FILE_PROVIDER_PATHS"
+67-->[:image_picker] C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-67
+68                android:resource="@xml/flutter_image_picker_file_paths" />
+68-->[:image_picker] C:\Users\imad.dweikat\Downloads\flutter_app_new_2023\ai_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-72
+69        </provider>
+70
+71        <uses-library
+71-->[androidx.window:window:1.0.0-beta04] C:\Users\imad.dweikat\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+72            android:name="androidx.window.extensions"
+72-->[androidx.window:window:1.0.0-beta04] C:\Users\imad.dweikat\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+73            android:required="false" />
+73-->[androidx.window:window:1.0.0-beta04] C:\Users\imad.dweikat\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+74        <uses-library
+74-->[androidx.window:window:1.0.0-beta04] C:\Users\imad.dweikat\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+75            android:name="androidx.window.sidecar"
+75-->[androidx.window:window:1.0.0-beta04] C:\Users\imad.dweikat\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+76            android:required="false" />
+76-->[androidx.window:window:1.0.0-beta04] C:\Users\imad.dweikat\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+77    </application>
+78
+79</manifest>
